@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no, 
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
@@ -13,8 +17,7 @@
   <body>
     <form 
       action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md" 
-      method="post"
-    >
+      method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
         <label class="form-field">
@@ -84,12 +87,15 @@
         <legend>An interesting fact about you!</legend>
         <label class="form-field">
           Do you love cats?
-          <input
-            type="radio"
-            name="DoYouLoveCats"
-          >
+          <label>
+            <input
+              type="radio"
+              name="DoYouLoveCats"
+              value="y"
+            >
           Yes
-          <label class="form-field">
+          </label>
+          <label>
             <input
               type="radio"
               name="DoYouLoveCats"
@@ -117,7 +123,7 @@
           <select name="FavoriteBrandOfCars" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
-            <option value="Toyota">Toyota</option>
+            <option value="Lada">Lada</option>
           </select>
         </label>
         <label class="form-field">
@@ -125,7 +131,7 @@
           <input
             type="range"
             name="RateOurWork"
-            value="1"
+            value="0"
           >
         </label>
       </fieldset>
@@ -133,8 +139,7 @@
         <legend>Additional info:</legend>
         <label class="form-field">
           Comments:
-          <textarea name="Comments">
-          </textarea>
+          <textarea name="Comments"></textarea>
         </label>
         <label class="form-field">
           Would you recommend us?
